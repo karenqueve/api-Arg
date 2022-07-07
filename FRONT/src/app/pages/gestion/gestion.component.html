@@ -1,0 +1,13 @@
+<section>
+    <h3>Gestion</h3>
+    <form novalidate [formGroup]="argForm">
+        <label for="title">Que visitar?</label>
+        <input type="text" id="title" formControlName="title" placeholder="Agrega un sitio para visitar.">
+        <label for="habitantes">Info del sitio.</label>
+        <input type="text" id="title" formControlName="habitantes">
+        <label for="cover">Imagen/Foto</label>
+        <input type="text" id="cover" formControlName="cover">
+        <button type="sumbit">Agregar</button>
+        <button *ngIf="argID !== ''" (click)="delete()">Borrar</button>
+    </form>
+</section>

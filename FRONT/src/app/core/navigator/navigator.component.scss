@@ -1,0 +1,17 @@
+nav {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        transition: all 0.2s;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: black;
+
+        &:hover {
+            color: lightblue;
+        }
+    }
+}

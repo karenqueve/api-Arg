@@ -1,0 +1,12 @@
+<section>
+    <h1>Mi argentina</h1>
+
+    <div>
+        <figure *ngFor="let arg of argList">
+            <h3>{{arg.title}}</h3>
+            <p>Habitantes en 2022; {{arg.habitantes}}</p>
+            <img src="{{arg.cover}}" alt="{{arg.title}}">
+            <button (click)="catchArg(arg)">Editar</button>
+        </figure>
+    </div>
+</section>
